@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Reservations — Limón</title>
+  <meta name="description" content="Book a table at Limón, 21 Harbour Street, Old Town. Opening hours, phone and map." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-contact">
+
+  <!-- Page transition curtain -->
+  <div class="curtain" aria-hidden="true">
+    <div class="curtain__panel curtain__panel--lemon"></div>
+    <div class="curtain__panel"><span class="curtain__logo">LIMÓN</span></div>
+  </div>
+
+  <!-- ============ TOP NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <nav class="nav__group nav__group--left" aria-label="Primary">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="menu.html" class="nav__link">Menu</a>
+        <a href="about.html" class="nav__link">About Us</a>
+        <a href="faq.html" class="nav__link">FAQ</a>
+        <a href="contact.html" class="nav__link is-active">Contact</a>
+      </nav>
+
+      <a href="index.html" class="nav__logo">LIMÓN</a>
+
+      <div class="nav__group nav__group--right">
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="nav__link nav__link--ig">
+          <i class="fa-brands fa-instagram"></i> Follow us on Instagram
+        </a>
+        <a href="contact.html" class="btn btn--lemon btn--sm">Book a table</a>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__progress" aria-hidden="true"></div>
+
+    <!-- Mobile drawer -->
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <a href="index.html" class="drawer__link">Home <small>01</small></a>
+      <a href="menu.html" class="drawer__link">Menu <small>02</small></a>
+      <a href="about.html" class="drawer__link">About Us <small>03</small></a>
+      <a href="faq.html" class="drawer__link">FAQ <small>04</small></a>
+      <a href="contact.html" class="drawer__link is-active">Contact <small>05</small></a>
+      <a href="contact.html" class="btn btn--lemon drawer__cta">Book a table</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener" class="drawer__ig">
+        <i class="fa-brands fa-instagram"></i> Follow us on Instagram
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <i class="fa-solid fa-lemon page-hero__deco" aria-hidden="true"></i>
+      <div class="container">
+        <nav class="page-hero__crumb reveal" aria-label="Breadcrumb"><a href="index.html">Limón</a><span>/</span><span>Contact</span></nav>
+        <div class="page-hero__row">
+          <h1 class="page-hero__title" data-split="chars" data-delay="200">Book a table</h1>
+          <p class="page-hero__sub reveal">Reserve online, call after 3pm, or just walk in — half the room is always kept for tonight.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT / RESERVATION ============ -->
+    <section class="section section--dark" style="padding-top:40px">
+      <div class="container contact">
+        <div class="contact__info">
+          <div class="status reveal"><span class="status__dot"></span><span class="status__text">Checking hours…</span></div>
+          <div class="contact__block reveal">
+            <span class="caption">Address</span>
+            <p>21 Harbour Street<br />Old Town, Jakarta 10110</p>
+          </div>
+          <div class="contact__block reveal">
+            <span class="caption">Hours</span>
+            <ul class="hours">
+              <li data-days="1"><span>Monday</span><span>Closed</span></li>
+              <li data-days="2,3,4"><span>Tue — Thu</span><span>17:00 — 23:00</span></li>
+              <li data-days="5,6"><span>Fri — Sat</span><span>17:00 — 00:00</span></li>
+              <li data-days="0"><span>Sunday</span><span>12:00 — 22:00</span></li>
+            </ul>
+          </div>
+          <div class="contact__block reveal">
+            <span class="caption">Get in touch</span>
+            <p><a href="tel:+62215550192">+62 21 555 0192</a><br /><a href="mailto:hello@limon.kitchen">hello@limon.kitchen</a></p>
+          </div>
+        </div>
+
+        <form class="form reveal" id="reserveForm" novalidate>
+          <div class="form__row">
+            <label class="field"><span class="caption">Name</span><input type="text" name="name" placeholder="Your name" required /></label>
+            <label class="field"><span class="caption">Phone</span><input type="tel" name="phone" placeholder="+62 ..." required /></label>
+          </div>
+          <label class="field"><span class="caption">Email</span><input type="email" name="email" placeholder="you@example.com" required /></label>
+          <div class="form__row form__row--3">
+            <label class="field"><span class="caption">Date</span><input type="date" name="date" id="dateInput" required /></label>
+            <label class="field"><span class="caption">Time</span>
+              <select name="time" required>
+                <option value="">Select</option>
+                <option>17:00</option><option>17:30</option><option>18:00</option>
+                <option>18:30</option><option>19:00</option><option>19:30</option>
+                <option>20:00</option><option>20:30</option><option>21:00</option>
+                <option>21:30</option><option>22:00</option>
+              </select>
+            </label>
+            <label class="field"><span class="caption">Guests</span>
+              <select name="guests" required>
+                <option value="">Select</option>
+                <option>1</option><option>2</option><option>3</option><option>4</option>
+                <option>5</option><option>6</option><option>7+</option>
+              </select>
+            </label>
+          </div>
+          <label class="field"><span class="caption">Notes</span><textarea name="notes" rows="3" placeholder="Allergies, occasions, window seat…"></textarea></label>
+          <div class="form__foot">
+            <button type="submit" class="btn btn--lemon">Request booking</button>
+            <p class="form__msg" id="formMsg" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ MAP ============ -->
+    <div class="map img-reveal">
+      <iframe title="Map of Limón location" src="https://maps.google.com/maps?q=Kota%20Tua%20Jakarta&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <span class="map__pin" aria-hidden="true"></span>
+    </div>
+
+    <!-- ============ INSTAGRAM STRIP ============ -->
+    <section class="insta" aria-label="Instagram">
+      <div class="insta__head container">
+        <h2 class="heading-sm heading--cream" data-split="words">Follow along</h2>
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="link-ghost link-ghost--lemon">@limon.kitchen <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="insta__grid">
+        <a href="https://instagram.com" target="_blank" rel="noopener" data-cursor="Open"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Colourful poke bowl" loading="lazy" /></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" data-cursor="Open"><img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=80" alt="Cocktail with rosemary" loading="lazy" /></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" data-cursor="Open"><img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=600&q=80" alt="Stack of pancakes" loading="lazy" /></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" data-cursor="Open"><img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=80" alt="Chef plating a dish" loading="lazy" /></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" data-cursor="Open"><img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80" alt="Tacos being finished with sauce" loading="lazy" /></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" data-cursor="Open"><img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=600&q=80" alt="French toast with blueberries" loading="lazy" /></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="index.html" class="footer__logo">LIMÓN</a>
+        <form class="newsletter reveal" id="newsletter" novalidate>
+          <label for="nlEmail" class="caption">Letters from the kitchen — once a month</label>
+          <div class="newsletter__row">
+            <input type="email" id="nlEmail" placeholder="Email address" required />
+            <button type="submit" class="btn btn--lemon">Subscribe</button>
+          </div>
+          <p class="form__msg" id="nlMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="footer__cols">
+        <div class="reveal">
+          <span class="caption">Visit</span>
+          <p>21 Harbour Street<br />Old Town, Jakarta</p>
+        </div>
+        <div class="reveal">
+          <span class="caption">Explore</span>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <span class="caption">Contact</span>
+          <p><a href="tel:+62215550192">+62 21 555 0192</a><br /><a href="mailto:hello@limon.kitchen">hello@limon.kitchen</a></p>
+        </div>
+        <div class="reveal">
+          <span class="caption">Follow</span>
+          <div class="socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span class="js-year">2026</span> Limón Brasserie &amp; Kitchen</span>
+        <span>Cooked with lemons, served in the dark.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#" class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

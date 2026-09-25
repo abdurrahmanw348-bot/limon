@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Limón</title>
+  <meta name="description" content="From a six-seat counter to a 42-seat brasserie: the story of Limón on Harbour Street." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-about">
+
+  <!-- Page transition curtain -->
+  <div class="curtain" aria-hidden="true">
+    <div class="curtain__panel curtain__panel--lemon"></div>
+    <div class="curtain__panel"><span class="curtain__logo">LIMÓN</span></div>
+  </div>
+
+  <!-- ============ TOP NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <nav class="nav__group nav__group--left" aria-label="Primary">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="menu.html" class="nav__link">Menu</a>
+        <a href="about.html" class="nav__link is-active">About Us</a>
+        <a href="faq.html" class="nav__link">FAQ</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+
+      <a href="index.html" class="nav__logo">LIMÓN</a>
+
+      <div class="nav__group nav__group--right">
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="nav__link nav__link--ig">
+          <i class="fa-brands fa-instagram"></i> Follow us on Instagram
+        </a>
+        <a href="contact.html" class="btn btn--lemon btn--sm">Book a table</a>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__progress" aria-hidden="true"></div>
+
+    <!-- Mobile drawer -->
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <a href="index.html" class="drawer__link">Home <small>01</small></a>
+      <a href="menu.html" class="drawer__link">Menu <small>02</small></a>
+      <a href="about.html" class="drawer__link is-active">About Us <small>03</small></a>
+      <a href="faq.html" class="drawer__link">FAQ <small>04</small></a>
+      <a href="contact.html" class="drawer__link">Contact <small>05</small></a>
+      <a href="contact.html" class="btn btn--lemon drawer__cta">Book a table</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener" class="drawer__ig">
+        <i class="fa-brands fa-instagram"></i> Follow us on Instagram
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <i class="fa-solid fa-lemon page-hero__deco" aria-hidden="true"></i>
+      <div class="container">
+        <nav class="page-hero__crumb reveal" aria-label="Breadcrumb"><a href="index.html">Limón</a><span>/</span><span>About us</span></nav>
+        <div class="page-hero__row">
+          <h1 class="page-hero__title" data-split="chars" data-delay="200">Our Story</h1>
+          <p class="page-hero__sub reveal">Six seats, one fridge and a crate of lemons. Seven years later, the room is bigger — the idea isn't.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="banner img-reveal">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=2000&amp;q=80" alt="The Limón dining room at night" data-parallax="0.18" data-scale="1.2" />
+    </div>
+
+    <!-- ============ STORY ============ -->
+    <section class="section section--dark">
+      <div class="container about__inner">
+        <div class="about__text">
+          <p class="eyebrow reveal">How it started</p>
+          <h2 class="heading heading--cream" data-split="words">Cooking with fire, salt and acid</h2>
+          <p class="body body--cream reveal">Limón opened in 2019 as a counter on Harbour Street: one grill, a rice cooker and whatever the fish market had left at noon. We squeezed lemons on everything because it made the food taste alive — people noticed.</p>
+          <p class="body body--cream reveal">Today there are forty-two seats and a proper kitchen, but the rules are the same. Short menu. Honest produce. A hot grill. A dark room so the plates can do the talking.</p>
+          <div class="stats reveal">
+            <div class="stat"><span class="stat__num" data-count="7">0</span><span class="caption">Years open</span></div>
+            <div class="stat"><span class="stat__num" data-count="14">0</span><span class="caption">Cooks &amp; hosts</span></div>
+            <div class="stat"><span class="stat__num" data-count="1200" data-suffix="+">0</span><span class="caption">Lemons a week</span></div>
+          </div>
+        </div>
+        <div class="about__media img-reveal">
+          <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Chef plating under copper lamps" loading="lazy" data-parallax="0.1" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TIMELINE ============ -->
+    <section class="section section--dark" style="padding-top:0">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal">Timeline</p>
+          <h2 class="heading heading--cream" data-split="words">Seven years in lemons</h2>
+        </div>
+        <div class="timeline">
+          <span class="timeline__track"></span><span class="timeline__fill"></span>
+          <div class="tl-item reveal"><span class="tl-item__year">2019</span><div><h3>Six seats on Harbour St.</h3><p>A counter, a charcoal grill and a handwritten menu of four bowls. The first poke sells out by 8pm.</p></div></div>
+          <div class="tl-item reveal"><span class="tl-item__year">2020</span><div><h3>Takeaway through the window</h3><p>The dining room closes; the window stays open. Tacos wrapped in paper keep the lights on.</p></div></div>
+          <div class="tl-item reveal"><span class="tl-item__year">2022</span><div><h3>The room next door</h3><p>We knock through the wall, install the long bar and grow to forty-two seats — and never one more.</p></div></div>
+          <div class="tl-item reveal"><span class="tl-item__year">2024</span><div><h3>The wine list</h3><p>Natural, skin-contact and low-intervention bottles arrive, chosen to stand up to all that acid.</p></div></div>
+          <div class="tl-item reveal"><span class="tl-item__year">2026</span><div><h3>Still squeezing</h3><p>Fourteen people, one grill, and more than a thousand lemons a week. Come say hello.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VALUES ============ -->
+    <section class="section section--cream">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow eyebrow--dark reveal">What we believe</p>
+            <h2 class="heading" data-split="words">Three house rules</h2>
+          </div>
+          <p class="body section-head__intro reveal">They are written on the wall above the pass. Nobody has argued with them yet.</p>
+        </div>
+        <div class="values">
+          <div class="value reveal"><div class="value__icon"><i class="fa-solid fa-fire"></i></div><h3>Fire first</h3><p>Almost everything touches the grill. Char is a seasoning, and we use it generously.</p></div>
+          <div class="value reveal"><div class="value__icon"><i class="fa-solid fa-lemon"></i></div><h3>Acid always</h3><p>A squeeze of lemon, a spoon of pickle, a splash of vinegar. Brightness is what makes you take another bite.</p></div>
+          <div class="value reveal"><div class="value__icon"><i class="fa-solid fa-seedling"></i></div><h3>Market led</h3><p>We buy from the same fishermen and growers every week and write the specials around what they bring.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section section--cream" style="padding-top:0">
+      <div class="container gallery">
+        <div class="gallery__item img-reveal"><img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Friends sharing plates at a table" loading="lazy" data-parallax="0.06" /></div>
+        <div class="gallery__item img-reveal"><img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Fresh ingredients on a chopping board" loading="lazy" data-parallax="0.14" /></div>
+        <div class="gallery__item img-reveal"><img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="The bar at night" loading="lazy" data-parallax="0.09" /></div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <a href="contact.html" class="cta-band" data-marquee="-1" data-speed="1.2" data-cursor="Book">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Book a table</span><i class="fa-solid fa-asterisk"></i>
+          <span>Stay late</span><i class="fa-solid fa-asterisk"></i>
+        </div>
+      </div>
+    </a>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="index.html" class="footer__logo">LIMÓN</a>
+        <form class="newsletter reveal" id="newsletter" novalidate>
+          <label for="nlEmail" class="caption">Letters from the kitchen — once a month</label>
+          <div class="newsletter__row">
+            <input type="email" id="nlEmail" placeholder="Email address" required />
+            <button type="submit" class="btn btn--lemon">Subscribe</button>
+          </div>
+          <p class="form__msg" id="nlMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="footer__cols">
+        <div class="reveal">
+          <span class="caption">Visit</span>
+          <p>21 Harbour Street<br />Old Town, Jakarta</p>
+        </div>
+        <div class="reveal">
+          <span class="caption">Explore</span>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <span class="caption">Contact</span>
+          <p><a href="tel:+62215550192">+62 21 555 0192</a><br /><a href="mailto:hello@limon.kitchen">hello@limon.kitchen</a></p>
+        </div>
+        <div class="reveal">
+          <span class="caption">Follow</span>
+          <div class="socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span class="js-year">2026</span> Limón Brasserie &amp; Kitchen</span>
+        <span>Cooked with lemons, served in the dark.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#" class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

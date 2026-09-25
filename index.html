@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Limón — Brasserie &amp; Kitchen</title>
+  <meta name="description" content="Limón — a moody brasserie under candlelight. Poke bowls, charred tortillas, citrus-cured fish and natural wine, served late." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-home">
+
+  <!-- Page transition curtain -->
+  <div class="curtain" aria-hidden="true">
+    <div class="curtain__panel curtain__panel--lemon"></div>
+    <div class="curtain__panel"><span class="curtain__logo">LIMÓN</span></div>
+  </div>
+
+  <!-- ============ TOP NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <nav class="nav__group nav__group--left" aria-label="Primary">
+        <a href="index.html" class="nav__link is-active">Home</a>
+        <a href="menu.html" class="nav__link">Menu</a>
+        <a href="about.html" class="nav__link">About Us</a>
+        <a href="faq.html" class="nav__link">FAQ</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+
+      <a href="index.html" class="nav__logo">LIMÓN</a>
+
+      <div class="nav__group nav__group--right">
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="nav__link nav__link--ig">
+          <i class="fa-brands fa-instagram"></i> Follow us on Instagram
+        </a>
+        <a href="contact.html" class="btn btn--lemon btn--sm">Book a table</a>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__progress" aria-hidden="true"></div>
+
+    <!-- Mobile drawer -->
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <a href="index.html" class="drawer__link is-active">Home <small>01</small></a>
+      <a href="menu.html" class="drawer__link">Menu <small>02</small></a>
+      <a href="about.html" class="drawer__link">About Us <small>03</small></a>
+      <a href="faq.html" class="drawer__link">FAQ <small>04</small></a>
+      <a href="contact.html" class="drawer__link">Contact <small>05</small></a>
+      <a href="contact.html" class="btn btn--lemon drawer__cta">Book a table</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener" class="drawer__ig">
+        <i class="fa-brands fa-instagram"></i> Follow us on Instagram
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero__media">
+        <div class="hero__slides" data-parallax="0.12">
+          <div class="hero__slide is-active"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" alt="Grilled beef salad on a dark wooden table" /></div>
+          <div class="hero__slide"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" alt="Plated dish on a candlelit table" /></div>
+          <div class="hero__slide"><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" alt="Table spread with tortilla chips and small plates" /></div>
+        </div>
+        <div class="hero__counter"><span class="hero__num">01</span><span class="hero__bar"><i></i></span><span>03</span></div>
+      </div>
+
+      <div class="badge" aria-hidden="true">
+        <svg class="badge__ring" viewBox="0 0 200 200">
+          <defs><path id="badgePath" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0" /></defs>
+          <circle cx="100" cy="100" r="98" />
+          <text><textPath href="#badgePath">Fresh · Squeezed · Daily · Late kitchen ·</textPath></text>
+        </svg>
+        <span class="badge__icon"><i class="fa-solid fa-lemon"></i></span>
+      </div>
+
+      <div class="container hero__content">
+        <p class="eyebrow reveal">Est. 2019 &nbsp;·&nbsp; Brasserie &amp; Kitchen</p>
+        <h1 class="hero__title">
+          <span data-split="chars" data-delay="150">Fresh</span>
+          <span data-split="chars" data-delay="350">Squeezed</span>
+        </h1>
+        <p class="hero__sub reveal">Bright bowls, charred tortillas and citrus-cured fish — served late under warm light on Harbour Street.</p>
+        <div class="hero__actions reveal">
+          <a href="menu.html" class="btn btn--lemon">Order now</a>
+          <a href="contact.html" class="link-ghost link-ghost--cream">Reserve a table <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="container hero__info">
+        <div class="hero__info-item reveal"><span class="caption">Open tonight</span><span>17:00 — 00:00</span></div>
+        <div class="hero__info-item reveal"><span class="caption">Find us</span><span>21 Harbour Street, Old Town</span></div>
+        <div class="hero__info-item reveal"><span class="caption">Call</span><a href="tel:+62215550192">+62 21 555 0192</a></div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" data-marquee="-1" data-speed="0.7" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Poke</span><i class="fa-solid fa-lemon"></i>
+          <span>Tostadas</span><i class="fa-solid fa-lemon"></i>
+          <span>Ceviche</span><i class="fa-solid fa-lemon"></i>
+          <span>Natural Wine</span><i class="fa-solid fa-lemon"></i>
+          <span>Late Kitchen</span><i class="fa-solid fa-lemon"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ STATEMENT ============ -->
+    <section class="section section--cream">
+      <div class="container statement-wrap">
+        <p class="eyebrow eyebrow--dark reveal">Our kitchen</p>
+        <div>
+          <p class="statement">We cook with fire, salt and far too many lemons <span class="statement__pill"><img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&amp;fit=crop&amp;w=300&amp;q=80" alt="" /></span> — a short menu, a dark room, and plates that bring all the colour <span class="statement__pill"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&amp;fit=crop&amp;w=300&amp;q=80" alt="" /></span> you need.</p>
+          <div class="section-foot" style="justify-content:flex-start">
+            <a href="about.html" class="link-ghost reveal">Read our story <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SIGNATURE DISHES ============ -->
+    <section class="section section--cream" style="padding-top:0">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow eyebrow--dark reveal">The menu</p>
+            <h2 class="heading" data-split="words">On the table tonight</h2>
+          </div>
+          <p class="body section-head__intro reveal">Everything is cooked to order from what came off the boat and out of the market this morning. The menu changes — the lemons don't.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="food-card reveal">
+            <a href="menu.html" class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Yuzu salmon poke bowl" loading="lazy" /><span class="food-card__tag">Bestseller</span></a>
+            <div class="food-card__head"><h3 class="food-card__title">Yuzu Salmon Poke</h3><span class="food-card__price">$16</span></div>
+            <p class="food-card__desc">Sushi rice, cured salmon, pickled radish, edamame and a yuzu-kosho dressing.</p>
+            <a href="menu.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="food-card reveal">
+            <a href="menu.html" class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Chipotle crema tacos" loading="lazy" /></a>
+            <div class="food-card__head"><h3 class="food-card__title">Chipotle Crema Tacos</h3><span class="food-card__price">$12</span></div>
+            <p class="food-card__desc">Blue corn tortillas, smoked chicken thigh, pineapple salsa and chipotle crema.</p>
+            <a href="menu.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="food-card reveal">
+            <a href="menu.html" class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Lemon olive oil cake with berries" loading="lazy" /><span class="food-card__tag">New</span></a>
+            <div class="food-card__head"><h3 class="food-card__title">Lemon Olive Oil Cake</h3><span class="food-card__price">$9</span></div>
+            <p class="food-card__desc">Warm sponge, lemon curd, crème fraîche and whatever berries are good this week.</p>
+            <a href="menu.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+        <div class="section-foot reveal"><a href="menu.html" class="link-ghost">See the full menu <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED DISH ============ -->
+    <section class="section section--cream feature">
+      <div class="container feature__inner">
+        <div class="feature__text">
+          <p class="eyebrow eyebrow--dark reveal">Signature of the house</p>
+          <h2 class="heading" data-split="words">The Limón Poke</h2>
+          <p class="body reveal">Our first dish and still the one people come back for. Marinated for exactly eleven minutes in lime, shoyu and toasted sesame, piled over warm rice with everything crunchy we can find.</p>
+          <ul class="feature__list reveal">
+            <li><span>Protein</span><span>Tuna, salmon or crispy tofu</span></li>
+            <li><span>Warm rice</span><span>Sushi or brown</span></li>
+            <li><span>Crunch</span><span>Shallot, nori, macadamia</span></li>
+            <li><span>Dressing</span><span>Lime-shoyu</span></li>
+          </ul>
+          <div class="feature__foot reveal">
+            <span class="feature__price">$18</span>
+            <a href="menu.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="feature__media img-reveal img-reveal--left">
+          <img src="https://images.unsplash.com/photo-1546069901-d5bfd2cbfb1f?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Poke bowl photographed from above" loading="lazy" data-parallax="0.08" data-scale="1.15" />
+          <div class="badge" aria-hidden="true">
+            <svg class="badge__ring" viewBox="0 0 200 200">
+              <defs><path id="badgePath2" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0" /></defs>
+              <circle cx="100" cy="100" r="98" />
+              <text><textPath href="#badgePath2">Since 2019 · House favourite ·</textPath></text>
+            </svg>
+            <span class="badge__icon"><i class="fa-solid fa-star"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ IMAGE STRIP ============ -->
+    <section class="section section--dark" style="padding-bottom:60px">
+      <div class="container section-head section-head--split">
+        <div>
+          <p class="eyebrow reveal">From the pass</p>
+          <h2 class="heading heading--cream" data-split="words">Colour in the dark</h2>
+        </div>
+        <p class="body body--cream section-head__intro reveal">A few things leaving the kitchen this week. Scroll — the plates follow.</p>
+      </div>
+    </section>
+    <div class="strip" data-marquee="1" data-speed="0.5">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <figure><div class="strip__img"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Grilled skewers" loading="lazy" /></div><figcaption class="caption">Lemon grill skewers</figcaption></figure>
+          <figure><div class="strip__img"><img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Rosemary cocktail" loading="lazy" /></div><figcaption class="caption">Limón spritz</figcaption></figure>
+          <figure><div class="strip__img"><img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Raw fish crudo" loading="lazy" /></div><figcaption class="caption">Citrus crudo</figcaption></figure>
+          <figure><div class="strip__img"><img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Baja fish tacos" loading="lazy" /></div><figcaption class="caption">Baja fish tacos</figcaption></figure>
+          <figure><div class="strip__img"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Citrus paella" loading="lazy" /></div><figcaption class="caption">Citrus paella</figcaption></figure>
+          <figure><div class="strip__img"><img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Sorbet cone" loading="lazy" /></div><figcaption class="caption">Lemon sorbet</figcaption></figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT TEASER ============ -->
+    <section class="section section--dark about" style="padding-top:0">
+      <div class="container about__inner">
+        <div class="about__media img-reveal">
+          <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Dimly lit bar with warm pendant lights" loading="lazy" data-parallax="0.1" />
+        </div>
+        <div class="about__text">
+          <p class="eyebrow reveal">About us</p>
+          <h2 class="heading heading--cream" data-split="words">A kitchen lit by citrus</h2>
+          <p class="body body--cream reveal">Limón started as a six-seat counter with one fridge and a crate of lemons. We still cook the same way: short menu, honest produce, a hot grill and plenty of acid.</p>
+          <div class="stats reveal">
+            <div class="stat"><span class="stat__num" data-count="7">0</span><span class="caption">Years on Harbour St.</span></div>
+            <div class="stat"><span class="stat__num" data-count="42">0</span><span class="caption">Seats, no more</span></div>
+            <div class="stat"><span class="stat__num" data-count="1200" data-suffix="+">0</span><span class="caption">Lemons a week</span></div>
+          </div>
+          <div style="margin-top:40px" class="reveal"><a href="about.html" class="link-ghost link-ghost--lemon">Meet the kitchen <i class="fa-solid fa-arrow-right"></i></a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUOTES ============ -->
+    <section class="section section--forest quotes" aria-label="What guests say">
+      <div class="container">
+        <span class="quotes__mark" aria-hidden="true">“</span>
+        <div class="quotes__slider">
+          <figure class="quote is-active">
+            <blockquote data-split="words">The kind of place you walk past for months, then can’t stop going to. That poke bowl is the best thing in the neighbourhood.</blockquote>
+            <figcaption class="caption">The Harbour Journal</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote data-split="words">Candlelight, loud records and a crudo sharp enough to wake you up. Limón gets the mood exactly right.</blockquote>
+            <figcaption class="caption">City Eats Weekly</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote data-split="words">Order the tacos, order the cake, and don’t argue about the lemon on everything. They’re right.</blockquote>
+            <figcaption class="caption">A regular, table 6</figcaption>
+          </figure>
+        </div>
+        <div class="quotes__dots">
+          <button class="dot is-active" aria-label="Review 1"><i></i></button>
+          <button class="dot" aria-label="Review 2"><i></i></button>
+          <button class="dot" aria-label="Review 3"><i></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <a href="contact.html" class="cta-band" data-marquee="-1" data-speed="1.2" data-cursor="Book">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Book a table</span><i class="fa-solid fa-asterisk"></i>
+          <span>Stay late</span><i class="fa-solid fa-asterisk"></i>
+        </div>
+      </div>
+    </a>
+
+    <!-- ============ INSTAGRAM STRIP ============ -->
+    <section class="insta" aria-label="Instagram">
+      <div class="insta__head container">
+        <h2 class="heading-sm heading--cream" data-split="words">Follow along</h2>
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="link-ghost link-ghost--lemon">@limon.kitchen <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="insta__grid">
+        <a href="https://instagram.com" target="_blank" rel="noopener" data-cursor="Open"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Colourful poke bowl" loading="lazy" /></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" data-cursor="Open"><img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=80" alt="Cocktail with rosemary" loading="lazy" /></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" data-cursor="Open"><img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=600&q=80" alt="Stack of pancakes" loading="lazy" /></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" data-cursor="Open"><img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=80" alt="Chef plating a dish" loading="lazy" /></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" data-cursor="Open"><img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80" alt="Tacos being finished with sauce" loading="lazy" /></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" data-cursor="Open"><img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=600&q=80" alt="French toast with blueberries" loading="lazy" /></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="index.html" class="footer__logo">LIMÓN</a>
+        <form class="newsletter reveal" id="newsletter" novalidate>
+          <label for="nlEmail" class="caption">Letters from the kitchen — once a month</label>
+          <div class="newsletter__row">
+            <input type="email" id="nlEmail" placeholder="Email address" required />
+            <button type="submit" class="btn btn--lemon">Subscribe</button>
+          </div>
+          <p class="form__msg" id="nlMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="footer__cols">
+        <div class="reveal">
+          <span class="caption">Visit</span>
+          <p>21 Harbour Street<br />Old Town, Jakarta</p>
+        </div>
+        <div class="reveal">
+          <span class="caption">Explore</span>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <span class="caption">Contact</span>
+          <p><a href="tel:+62215550192">+62 21 555 0192</a><br /><a href="mailto:hello@limon.kitchen">hello@limon.kitchen</a></p>
+        </div>
+        <div class="reveal">
+          <span class="caption">Follow</span>
+          <div class="socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span class="js-year">2026</span> Limón Brasserie &amp; Kitchen</span>
+        <span>Cooked with lemons, served in the dark.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#" class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

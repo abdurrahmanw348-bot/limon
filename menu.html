@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Limón</title>
+  <meta name="description" content="Bowls, tacos, grill, small plates and something sweet — the full Limón menu and bar list." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-menu">
+
+  <!-- Page transition curtain -->
+  <div class="curtain" aria-hidden="true">
+    <div class="curtain__panel curtain__panel--lemon"></div>
+    <div class="curtain__panel"><span class="curtain__logo">LIMÓN</span></div>
+  </div>
+
+  <!-- ============ TOP NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <nav class="nav__group nav__group--left" aria-label="Primary">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="menu.html" class="nav__link is-active">Menu</a>
+        <a href="about.html" class="nav__link">About Us</a>
+        <a href="faq.html" class="nav__link">FAQ</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+
+      <a href="index.html" class="nav__logo">LIMÓN</a>
+
+      <div class="nav__group nav__group--right">
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="nav__link nav__link--ig">
+          <i class="fa-brands fa-instagram"></i> Follow us on Instagram
+        </a>
+        <a href="contact.html" class="btn btn--lemon btn--sm">Book a table</a>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__progress" aria-hidden="true"></div>
+
+    <!-- Mobile drawer -->
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <a href="index.html" class="drawer__link">Home <small>01</small></a>
+      <a href="menu.html" class="drawer__link is-active">Menu <small>02</small></a>
+      <a href="about.html" class="drawer__link">About Us <small>03</small></a>
+      <a href="faq.html" class="drawer__link">FAQ <small>04</small></a>
+      <a href="contact.html" class="drawer__link">Contact <small>05</small></a>
+      <a href="contact.html" class="btn btn--lemon drawer__cta">Book a table</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener" class="drawer__ig">
+        <i class="fa-brands fa-instagram"></i> Follow us on Instagram
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <i class="fa-solid fa-lemon page-hero__deco" aria-hidden="true"></i>
+      <div class="container">
+        <nav class="page-hero__crumb reveal" aria-label="Breadcrumb"><a href="index.html">Limón</a><span>/</span><span>Menu</span></nav>
+        <div class="page-hero__row">
+          <h1 class="page-hero__title" data-split="chars" data-delay="200">The Menu</h1>
+          <p class="page-hero__sub reveal">Seventeen plates, five drinks we are proud of, and a lemon somewhere in almost all of them. Served 17:00 until late.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee marquee--lemon" data-marquee="-1" data-speed="0.8" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Bowls</span><i class="fa-solid fa-asterisk"></i>
+          <span>Tacos</span><i class="fa-solid fa-asterisk"></i>
+          <span>From the grill</span><i class="fa-solid fa-asterisk"></i>
+          <span>Small plates</span><i class="fa-solid fa-asterisk"></i>
+          <span>Something sweet</span><i class="fa-solid fa-asterisk"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ MENU GRID ============ -->
+    <section class="section section--cream" id="menu">
+      <div class="container">
+        <div class="filters filters--sticky reveal" role="tablist" aria-label="Filter menu">
+          <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter" data-filter="bowls" role="tab" aria-selected="false">Bowls</button>
+          <button class="filter" data-filter="tacos" role="tab" aria-selected="false">Tacos</button>
+          <button class="filter" data-filter="grill" role="tab" aria-selected="false">Grill</button>
+          <button class="filter" data-filter="plates" role="tab" aria-selected="false">Small Plates</button>
+          <button class="filter" data-filter="sweet" role="tab" aria-selected="false">Sweet</button>
+        </div>
+
+        <div class="grid grid--3" id="menuGrid">
+          <article class="food-card reveal" data-category="bowls">
+            <div class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Yuzu Salmon Poke" loading="lazy" /><span class="food-card__tag">Bestseller</span></div>
+            <div class="food-card__head"><h3 class="food-card__title">Yuzu Salmon Poke</h3><span class="food-card__price">$16</span></div>
+            <p class="food-card__desc">Sushi rice, cured salmon, pickled radish, edamame and a yuzu-kosho dressing.</p>
+            <a href="contact.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="food-card reveal" data-category="bowls">
+            <div class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Green Goddess Bowl" loading="lazy" /><span class="food-card__tag">Vegetarian</span></div>
+            <div class="food-card__head"><h3 class="food-card__title">Green Goddess Bowl</h3><span class="food-card__price">$14</span></div>
+            <p class="food-card__desc">Charred broccolini, herbs, soft egg, toasted seeds and whipped feta with lemon oil.</p>
+            <a href="contact.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="food-card reveal" data-category="bowls">
+            <div class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Citrus Paella" loading="lazy" /><span class="food-card__tag">For two</span></div>
+            <div class="food-card__head"><h3 class="food-card__title">Citrus Paella</h3><span class="food-card__price">$32</span></div>
+            <p class="food-card__desc">Saffron rice, prawns, chorizo and charred lemon — made for two, served in the pan.</p>
+            <a href="contact.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="food-card reveal" data-category="bowls">
+            <div class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Coconut Lemongrass Curry" loading="lazy" /></div>
+            <div class="food-card__head"><h3 class="food-card__title">Coconut Lemongrass Curry</h3><span class="food-card__price">$17</span></div>
+            <p class="food-card__desc">Slow-cooked chicken, coconut, lemongrass, Thai basil and lime leaf. Steamed jasmine rice.</p>
+            <a href="contact.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="food-card reveal" data-category="tacos">
+            <div class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Chipotle Crema Tacos" loading="lazy" /><span class="food-card__tag">Bestseller</span></div>
+            <div class="food-card__head"><h3 class="food-card__title">Chipotle Crema Tacos</h3><span class="food-card__price">$12</span></div>
+            <p class="food-card__desc">Blue corn tortillas, smoked chicken thigh, pineapple salsa and chipotle crema.</p>
+            <a href="contact.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="food-card reveal" data-category="tacos">
+            <div class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Baja Fish Tacos" loading="lazy" /></div>
+            <div class="food-card__head"><h3 class="food-card__title">Baja Fish Tacos</h3><span class="food-card__price">$13</span></div>
+            <p class="food-card__desc">Beer-battered market fish, lime slaw, pickled onion and avocado salsa.</p>
+            <a href="contact.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="food-card reveal" data-category="tacos">
+            <div class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Charred Corn Tostada" loading="lazy" /><span class="food-card__tag">Vegetarian</span></div>
+            <div class="food-card__head"><h3 class="food-card__title">Charred Corn Tostada</h3><span class="food-card__price">$11</span></div>
+            <p class="food-card__desc">Crisp tortilla, black beans, charred corn, cotija and chilli-lime crema.</p>
+            <a href="contact.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="food-card reveal" data-category="grill">
+            <div class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Lemon Grill Skewers" loading="lazy" /></div>
+            <div class="food-card__head"><h3 class="food-card__title">Lemon Grill Skewers</h3><span class="food-card__price">$13</span></div>
+            <p class="food-card__desc">Flame-grilled beef and peppers, charred lemon, salsa verde and flatbread.</p>
+            <a href="contact.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="food-card reveal" data-category="grill">
+            <div class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Charred Lemon Chicken" loading="lazy" /></div>
+            <div class="food-card__head"><h3 class="food-card__title">Charred Lemon Chicken</h3><span class="food-card__price">$19</span></div>
+            <p class="food-card__desc">Half chicken, brined overnight, grilled over coals with lemon, garlic and thyme.</p>
+            <a href="contact.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="food-card reveal" data-category="grill">
+            <div class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Flank Steak Chimichurri" loading="lazy" /></div>
+            <div class="food-card__head"><h3 class="food-card__title">Flank Steak Chimichurri</h3><span class="food-card__price">$26</span></div>
+            <p class="food-card__desc">Grass-fed flank, cooked medium-rare, sharp green chimichurri and crispy potatoes.</p>
+            <a href="contact.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="food-card reveal" data-category="grill">
+            <div class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Limón Smash Burger" loading="lazy" /><span class="food-card__tag">Late night</span></div>
+            <div class="food-card__head"><h3 class="food-card__title">Limón Smash Burger</h3><span class="food-card__price">$15</span></div>
+            <p class="food-card__desc">Two smashed patties, American cheese, pickles, lemon aioli. Fries on the side.</p>
+            <a href="contact.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="food-card reveal" data-category="plates">
+            <div class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Citrus Crudo" loading="lazy" /></div>
+            <div class="food-card__head"><h3 class="food-card__title">Citrus Crudo</h3><span class="food-card__price">$15</span></div>
+            <p class="food-card__desc">Raw market fish, blood orange, jalapeño, sesame and cold-pressed olive oil.</p>
+            <a href="contact.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="food-card reveal" data-category="plates">
+            <div class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Chips & Salsa Verde" loading="lazy" /><span class="food-card__tag">Share</span></div>
+            <div class="food-card__head"><h3 class="food-card__title">Chips & Salsa Verde</h3><span class="food-card__price">$8</span></div>
+            <p class="food-card__desc">Warm tortilla chips, tomatillo salsa, guacamole and pico de gallo to share.</p>
+            <a href="contact.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="food-card reveal" data-category="plates">
+            <div class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Seared Salmon" loading="lazy" /></div>
+            <div class="food-card__head"><h3 class="food-card__title">Seared Salmon</h3><span class="food-card__price">$18</span></div>
+            <p class="food-card__desc">Crispy-skin salmon, charred greens, capers and brown-butter lemon sauce.</p>
+            <a href="contact.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="food-card reveal" data-category="sweet">
+            <div class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Lemon Olive Oil Cake" loading="lazy" /><span class="food-card__tag">New</span></div>
+            <div class="food-card__head"><h3 class="food-card__title">Lemon Olive Oil Cake</h3><span class="food-card__price">$9</span></div>
+            <p class="food-card__desc">Warm sponge, lemon curd, crème fraîche and whatever berries are good this week.</p>
+            <a href="contact.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="food-card reveal" data-category="sweet">
+            <div class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Lemon Sorbet Cone" loading="lazy" /><span class="food-card__tag">Vegan</span></div>
+            <div class="food-card__head"><h3 class="food-card__title">Lemon Sorbet Cone</h3><span class="food-card__price">$6</span></div>
+            <p class="food-card__desc">Sharp, cold, and made in house every morning. The best way to end anything.</p>
+            <a href="contact.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="food-card reveal" data-category="sweet">
+            <div class="food-card__img img-reveal" data-cursor="Order"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Strawberry Panna Cotta" loading="lazy" /></div>
+            <div class="food-card__head"><h3 class="food-card__title">Strawberry Panna Cotta</h3><span class="food-card__price">$8</span></div>
+            <p class="food-card__desc">Vanilla bean cream set soft, macerated strawberries and a little black pepper.</p>
+            <a href="contact.html" class="link-ghost">Order now <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DRINKS ============ -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow reveal">The bar</p>
+            <h2 class="heading heading--cream" data-split="words">Something to drink</h2>
+          </div>
+          <p class="body body--cream section-head__intro reveal">Short cocktail list, low-intervention wine, and lemonade squeezed to order. Hover a drink to see it.</p>
+        </div>
+        <ul class="drinks">
+          <li class="drink reveal" data-preview="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&amp;fit=crop&amp;w=600&amp;q=80"><span class="drink__name">Limón Spritz</span><span class="drink__notes">Limoncello, bitter orange, prosecco, rosemary</span><span class="drink__price">$11</span></li>
+          <li class="drink reveal" data-preview="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&amp;fit=crop&amp;w=600&amp;q=80"><span class="drink__name">Mezcal Paloma</span><span class="drink__notes">Mezcal, pink grapefruit, lime, salt, soda</span><span class="drink__price">$13</span></li>
+          <li class="drink reveal" data-preview="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&amp;fit=crop&amp;w=600&amp;q=80"><span class="drink__name">Smoke &amp; Citrus Sour</span><span class="drink__notes">Bourbon, smoked lemon, honey, egg white</span><span class="drink__price">$14</span></li>
+          <li class="drink reveal" data-preview="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&amp;fit=crop&amp;w=600&amp;q=80"><span class="drink__name">Natural Orange Wine</span><span class="drink__notes">Skin-contact, rotating by the glass</span><span class="drink__price">$10</span></li>
+          <li class="drink reveal" data-preview="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&amp;fit=crop&amp;w=600&amp;q=80"><span class="drink__name">House Lemonade</span><span class="drink__notes">Squeezed to order — mint, ginger or chilli</span><span class="drink__price">$5</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <a href="contact.html" class="cta-band" data-marquee="-1" data-speed="1.2" data-cursor="Book">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Book a table</span><i class="fa-solid fa-asterisk"></i>
+          <span>Stay late</span><i class="fa-solid fa-asterisk"></i>
+        </div>
+      </div>
+    </a>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="index.html" class="footer__logo">LIMÓN</a>
+        <form class="newsletter reveal" id="newsletter" novalidate>
+          <label for="nlEmail" class="caption">Letters from the kitchen — once a month</label>
+          <div class="newsletter__row">
+            <input type="email" id="nlEmail" placeholder="Email address" required />
+            <button type="submit" class="btn btn--lemon">Subscribe</button>
+          </div>
+          <p class="form__msg" id="nlMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="footer__cols">
+        <div class="reveal">
+          <span class="caption">Visit</span>
+          <p>21 Harbour Street<br />Old Town, Jakarta</p>
+        </div>
+        <div class="reveal">
+          <span class="caption">Explore</span>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <span class="caption">Contact</span>
+          <p><a href="tel:+62215550192">+62 21 555 0192</a><br /><a href="mailto:hello@limon.kitchen">hello@limon.kitchen</a></p>
+        </div>
+        <div class="reveal">
+          <span class="caption">Follow</span>
+          <div class="socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span class="js-year">2026</span> Limón Brasserie &amp; Kitchen</span>
+        <span>Cooked with lemons, served in the dark.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#" class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

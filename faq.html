@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — Limón</title>
+  <meta name="description" content="Reservations, dietary needs, private events and practical info for visiting Limón." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-faq">
+
+  <!-- Page transition curtain -->
+  <div class="curtain" aria-hidden="true">
+    <div class="curtain__panel curtain__panel--lemon"></div>
+    <div class="curtain__panel"><span class="curtain__logo">LIMÓN</span></div>
+  </div>
+
+  <!-- ============ TOP NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <nav class="nav__group nav__group--left" aria-label="Primary">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="menu.html" class="nav__link">Menu</a>
+        <a href="about.html" class="nav__link">About Us</a>
+        <a href="faq.html" class="nav__link is-active">FAQ</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+
+      <a href="index.html" class="nav__logo">LIMÓN</a>
+
+      <div class="nav__group nav__group--right">
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="nav__link nav__link--ig">
+          <i class="fa-brands fa-instagram"></i> Follow us on Instagram
+        </a>
+        <a href="contact.html" class="btn btn--lemon btn--sm">Book a table</a>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__progress" aria-hidden="true"></div>
+
+    <!-- Mobile drawer -->
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <a href="index.html" class="drawer__link">Home <small>01</small></a>
+      <a href="menu.html" class="drawer__link">Menu <small>02</small></a>
+      <a href="about.html" class="drawer__link">About Us <small>03</small></a>
+      <a href="faq.html" class="drawer__link is-active">FAQ <small>04</small></a>
+      <a href="contact.html" class="drawer__link">Contact <small>05</small></a>
+      <a href="contact.html" class="btn btn--lemon drawer__cta">Book a table</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener" class="drawer__ig">
+        <i class="fa-brands fa-instagram"></i> Follow us on Instagram
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <i class="fa-solid fa-lemon page-hero__deco" aria-hidden="true"></i>
+      <div class="container">
+        <nav class="page-hero__crumb reveal" aria-label="Breadcrumb"><a href="index.html">Limón</a><span>/</span><span>FAQ</span></nav>
+        <div class="page-hero__row">
+          <h1 class="page-hero__title" data-split="chars" data-delay="200">Good to know</h1>
+          <p class="page-hero__sub reveal">Bookings, allergies, private dinners and where to park. If it's not here, call us after 3pm.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section--cream">
+      <div class="container faq">
+        <div class="faq__head">
+          <p class="eyebrow eyebrow--dark reveal">Questions</p>
+          <h2 class="heading" data-split="words">Asked often, answered honestly</h2>
+          <p class="body reveal">Anything else? Call the restaurant or send us a message — a real person answers.</p>
+          <div style="margin-top:32px" class="reveal"><a href="contact.html" class="link-ghost">Get in touch <i class="fa-solid fa-arrow-right"></i></a></div>
+        </div>
+        <div>
+          <div class="faq__group">
+            <p class="faq__group-title reveal"><span>Reservations</span><span>01</span></p>
+            <div class="faq__list">
+              <div class="faq__item reveal"><button class="faq__q" aria-expanded="false"><span>Do I need a reservation?</span><i class="fa-solid fa-plus"></i></button><div class="faq__a"><p>We keep half the room for walk-ins every night. For groups of four or more, or Friday and Saturday evenings, booking ahead is a good idea.</p></div></div>
+              <div class="faq__item reveal"><button class="faq__q" aria-expanded="false"><span>How long do you hold a table?</span><i class="fa-solid fa-plus"></i></button><div class="faq__a"><p>We hold tables for 15 minutes. Running late? Give us a call and we'll do our best to keep it for you.</p></div></div>
+              <div class="faq__item reveal"><button class="faq__q" aria-expanded="false"><span>Can I book for a large group?</span><i class="fa-solid fa-plus"></i></button><div class="faq__a"><p>Tables of up to 10 can be booked online. For bigger groups we set a sharing menu — send us a note through the contact page.</p></div></div>
+            </div>
+          </div>
+          <div class="faq__group">
+            <p class="faq__group-title reveal"><span>Food &amp; dietary</span><span>02</span></p>
+            <div class="faq__list">
+              <div class="faq__item reveal"><button class="faq__q" aria-expanded="false"><span>Do you cater for dietary requirements?</span><i class="fa-solid fa-plus"></i></button><div class="faq__a"><p>Yes. Most of the menu can be made vegetarian, vegan or gluten-free. Let your server know about any allergies and the kitchen will look after you.</p></div></div>
+              <div class="faq__item reveal"><button class="faq__q" aria-expanded="false"><span>Is the fish sustainable?</span><i class="fa-solid fa-plus"></i></button><div class="faq__a"><p>We buy line-caught fish from two local boats and change the menu when they can't bring us what we need.</p></div></div>
+              <div class="faq__item reveal"><button class="faq__q" aria-expanded="false"><span>Can I order for delivery or takeaway?</span><i class="fa-solid fa-plus"></i></button><div class="faq__a"><p>Takeaway is available from 17:00 until 23:00. Order at the counter, by phone, or through our delivery partners.</p></div></div>
+            </div>
+          </div>
+          <div class="faq__group">
+            <p class="faq__group-title reveal"><span>Events</span><span>03</span></p>
+            <div class="faq__list">
+              <div class="faq__item reveal"><button class="faq__q" aria-expanded="false"><span>Do you host private events?</span><i class="fa-solid fa-plus"></i></button><div class="faq__a"><p>The whole room can be booked for up to 42 guests, Sunday to Thursday. Send us your date and headcount and we'll build a menu with you.</p></div></div>
+              <div class="faq__item reveal"><button class="faq__q" aria-expanded="false"><span>Do you sell gift cards?</span><i class="fa-solid fa-plus"></i></button><div class="faq__a"><p>Yes — in any amount, at the restaurant or by email. They never expire.</p></div></div>
+            </div>
+          </div>
+          <div class="faq__group">
+            <p class="faq__group-title reveal"><span>Practical</span><span>04</span></p>
+            <div class="faq__list">
+              <div class="faq__item reveal"><button class="faq__q" aria-expanded="false"><span>Is there parking nearby?</span><i class="fa-solid fa-plus"></i></button><div class="faq__a"><p>There's a public car park two minutes' walk away on Quay Lane, and bike racks right outside the door.</p></div></div>
+              <div class="faq__item reveal"><button class="faq__q" aria-expanded="false"><span>Are children and dogs welcome?</span><i class="fa-solid fa-plus"></i></button><div class="faq__a"><p>Both, before 20:00. We have high chairs, and water bowls for well-behaved dogs on the terrace.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <a href="contact.html" class="cta-band" data-marquee="-1" data-speed="1.2" data-cursor="Book">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Book a table</span><i class="fa-solid fa-asterisk"></i>
+          <span>Stay late</span><i class="fa-solid fa-asterisk"></i>
+        </div>
+      </div>
+    </a>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="index.html" class="footer__logo">LIMÓN</a>
+        <form class="newsletter reveal" id="newsletter" novalidate>
+          <label for="nlEmail" class="caption">Letters from the kitchen — once a month</label>
+          <div class="newsletter__row">
+            <input type="email" id="nlEmail" placeholder="Email address" required />
+            <button type="submit" class="btn btn--lemon">Subscribe</button>
+          </div>
+          <p class="form__msg" id="nlMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="footer__cols">
+        <div class="reveal">
+          <span class="caption">Visit</span>
+          <p>21 Harbour Street<br />Old Town, Jakarta</p>
+        </div>
+        <div class="reveal">
+          <span class="caption">Explore</span>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <span class="caption">Contact</span>
+          <p><a href="tel:+62215550192">+62 21 555 0192</a><br /><a href="mailto:hello@limon.kitchen">hello@limon.kitchen</a></p>
+        </div>
+        <div class="reveal">
+          <span class="caption">Follow</span>
+          <div class="socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span class="js-year">2026</span> Limón Brasserie &amp; Kitchen</span>
+        <span>Cooked with lemons, served in the dark.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#" class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
