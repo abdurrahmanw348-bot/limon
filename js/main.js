@@ -447,7 +447,8 @@
   // Opening hours: highlight today + live open/closed status
   // [open, close] in hours; null = closed. Index = Date#getDay() (0 = Sunday)
   const HOURS = [[12, 22], null, [17, 23], [17, 23], [17, 23], [17, 24], [17, 24]];
-  const now = new Date();
+  // Always judge opening hours in Riyadh time (UTC+3, no DST), whatever the visitor's timezone.
+  const now = new Date(Date.now() + (180 + new Date().getTimezoneOffset()) * 60000);
   const today = HOURS[now.getDay()];
   const hourNow = now.getHours() + now.getMinutes() / 60;
   $$('.hours li[data-days]').forEach((li) => {
