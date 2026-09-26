@@ -812,7 +812,7 @@ body.nav-visible .filters--sticky { top: var(--nav-h); }
   text-transform: uppercase;
   color: var(--color-black-olive);
 }
-.food-card__price { font-size: var(--text-body-lg); font-weight: 500; color: var(--color-forest-ink); }
+.food-card__price { font-size: var(--text-body-lg); font-weight: 500; color: var(--color-forest-ink); white-space: nowrap; }
 .food-card__desc {
   font-size: var(--text-body);
   line-height: var(--leading-body);
@@ -855,7 +855,7 @@ body.nav-visible .filters--sticky { top: var(--nav-h); }
 .feature__list li span:first-child { text-transform: uppercase; font-weight: 500; }
 .feature__list li span:last-child { color: var(--color-forest-ink); opacity: .75; text-align: right; }
 .feature__foot { display: flex; align-items: center; gap: 30px; }
-.feature__price { font-size: var(--text-heading); letter-spacing: var(--tracking-heading); font-weight: 500; color: var(--color-black-olive); }
+.feature__price { font-size: var(--text-heading); letter-spacing: var(--tracking-heading); font-weight: 500; color: var(--color-black-olive); white-space: nowrap; }
 .feature__media { aspect-ratio: 5 / 4; overflow: hidden; position: relative; }
 .feature__media img { width: 100%; height: 100%; object-fit: cover; }
 .feature__media .badge { left: auto; right: 24px; bottom: 24px; margin: 0; width: 120px; height: 120px; animation: none; opacity: 1; transform: none; }
@@ -1095,7 +1095,7 @@ body.nav-visible .filters--sticky { top: var(--nav-h); }
 }
 .drink:hover .drink__name { transform: translateX(16px); color: var(--color-lemon-zest); }
 .drink__notes { font-size: var(--text-body-sm); color: var(--color-sage-mist); }
-.drink__price { font-size: var(--text-body-lg); font-weight: 500; }
+.drink__price { font-size: var(--text-body-lg); font-weight: 500; white-space: nowrap; }
 
 /* ---------- Contact ---------- */
 .contact {
